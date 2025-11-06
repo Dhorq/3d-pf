@@ -1,0 +1,96 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules
+jspm_packages/
+
+# Production build directories
+dist
+dist-ssr
+build
+out
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# Cache directories
+.cache
+.next
+.nuxt
+.svelte-kit
+.tmp
+temp
+tmp
+
+# Vite
+vite.config.js.timestamp*
+vite.config.ts.timestamp*
+
+# Parcel
+.cache/
+.parcel-cache/
+
+# TypeScript
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Mac / Linux / Windows system files
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage
+*.lcov
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Optional REACT fast refresh
+*.hot-update.*
+
+# Optional yarn v2+
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# Misc
+*.tgz
+*.zip
+*.tar
+*.gz
+*.7z
+*.bak
+*.tmp

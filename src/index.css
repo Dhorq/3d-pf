@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
+@import "tailwindcss";
+
+:root {
+  background-color: black;
+  color: white;
+  font-family: "Oxanium", sans-serif;
+
+  margin: 0px 50px;
+}
