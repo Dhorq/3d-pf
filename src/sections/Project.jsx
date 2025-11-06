@@ -1,4 +1,4 @@
-import { Suspense, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { project } from "../data/project";
 import { Canvas } from "@react-three/fiber";
 import { Center, OrbitControls } from "@react-three/drei";
@@ -8,6 +8,25 @@ const projectCount = project.length;
 
 const Project = () => {
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(0);
+  const [scale, setScale] = useState(15);
+  const [position, setPosition] = useState([0, -25, 0]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setScale(3);
+        setPosition([0, -5, 0]);
+      } else {
+        setScale(15);
+        setPosition([0, -25, 0]);
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const currentProject = project[selectedProjectIndex];
 
@@ -22,10 +41,10 @@ const Project = () => {
   };
 
   return (
-    <section className="c-space my-20">
+    <section className="c-space m-10 sm:m-20">
       <p className="head-text text-3xl text-center">My Projects</p>
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
-        <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200 bg-stone-950 rounded-2xl border border-gray-500">
+        <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200 bg-stone-950 border border-gray-500">
           {/* <div className="absolute top-0 right-0 -z-0">
             <img
               src={currentProject.spotlight}
@@ -43,7 +62,7 @@ const Project = () => {
               className="w-10 h-10 shadow-sm"
             />
           </div>
-          <div className="flex flex-col gap-5 text-white-600 my-5 min-h-[200px] sm:min-h-[150px]">
+          <div className="flex flex-col gap-5 text-white-600 my-5 min-h-[200px] sm:min-h-[200px]">
             <p className="text-white text-2xl font-semibold animatedText">
               {currentProject.title}
             </p>
@@ -97,22 +116,26 @@ const Project = () => {
             </button>
           </div>
         </div>
-        <div className="border border-black-300 bg-black-200 rounded-lg h-100 md:h-full">
-          <Canvas>
+        <div className="border border-white bg-black-200 h-150 md:h-full shadow-2xl shadow-black-200 bg-stone-950">
+          <Canvas gl={{ alpha: false }}>
             <ambientLight intensity={Math.PI / 2} />
             <directionalLight position={[10, 10, 5]} />
             <Center>
               <Suspense>
                 <group
-                  scale={15}
-                  position={[0, -25, 0]}
+                  scale={scale}
+                  position={position}
                   rotation={[0, -0.1, 0]}
                 >
                   <DemoComputer texture={currentProject.texture} />
                 </group>
               </Suspense>
             </Center>
-            <OrbitControls maxPolarAngle={Math.PI / 2} />
+            <OrbitControls
+              maxPolarAngle={Math.PI / 2}
+              scroll={false}
+              enableZoom={false}
+            />
           </Canvas>
         </div>
       </div>

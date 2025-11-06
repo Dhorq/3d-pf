@@ -63,6 +63,7 @@ const DemoComputer = (props) => {
                   receiveShadow
                   geometry={nodes.Object_6.geometry}
                   material={materials.Monitor_glass_mat}
+                  scale={[1, 1, 1]}
                 >
                   <meshBasicMaterial map={txt} />
                 </mesh>

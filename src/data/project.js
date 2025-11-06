@@ -1,3 +1,5 @@
+import portfoliov2 from "./../assets/img/portfolio-v2.png";
+
 export const project = [
   {
     title: "Portfolio Website V1",
@@ -12,11 +14,32 @@ export const project = [
       boxShadow: "0px 0px 60px 0px #AA3C304D",
     },
     spotlight: "/spotlight.png",
-    tags: [{ path: "/tailwind.png", name: "TailwindCSS" }],
+    tags: [
+      { path: "/css.jpg", name: "CSS" },
+      { path: "/react.png", name: "React" },
+    ],
   },
   {
     title: "Portfolio Website V2",
-    desc: "This is my second portfolio website",
+    desc: "This is my second portfolio website, built using React and Tailwind CSS to achieve a clean and modern design. The layout is intentionally made non-scrollable, focusing all the attention on a single, centered scene that represents my style and work. Everything you see is designed to fit perfectly on one screen — simple, direct, and immersive.",
+    href: "www.google.com",
+    className: "animatedText1",
+    texture: portfoliov2,
+    logo: "/portfolio.png",
+    logoStyle: {
+      backgroundColor: "#2A1816",
+      border: "0.2px solid #36201D",
+      boxShadow: "0px 0px 60px 0px #AA3C304D",
+    },
+    spotlight: "",
+    tags: [
+      { path: "/tailwind.png", name: "TailwindCSS" },
+      { path: "/react.png", name: "React" },
+    ],
+  },
+  {
+    title: "Double Degree",
+    desc: "A website-based application developed for my thesis using only HTML5 and CSS3, designed for desktop use without responsive design, focusing on system functionality rather than UI/UX.",
     href: "www.google.com",
     className: "animatedText1",
     texture: "/doubledegree.png",
