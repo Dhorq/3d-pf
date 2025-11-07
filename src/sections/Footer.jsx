@@ -5,7 +5,7 @@ const Footer = () => {
     <div>
       <p className="text-center">&copy; {date} Ridho Rifqy Muhammad</p>
       <p className="text-center mt-10">
-        This Site is Under Construction. Find my others here:
+        This Site is Under Construction. Find my others:
       </p>
       <div className="text-center font-bold mb-5">
         <a

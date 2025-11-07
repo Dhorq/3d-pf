@@ -32,7 +32,7 @@ const ThemeToggle = () => {
   return (
     <button
       className={cn(
-        "fixed  top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300",
+        "fixed bottom-5 left-5 z-1 p-2 rounded-full transition-colors duration-300",
         "focus:outline-hidden cursor-pointer"
         // max-sm:hidden
       )}

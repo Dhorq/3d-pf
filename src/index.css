@@ -68,15 +68,15 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
-    --foreground: 222 47% 11%;
+    --background: 200 40% 75%;
+    --foreground: 222 27% 11%;
 
     --card: 0 0% 100%;
 
     --primary: 250 47% 60%;
     --primary-foreground: 210 40% 98%;
 
-    --border: 214 32% 91%;
+    --border: 210 40% 60%;
   }
 
   .dark {
@@ -88,7 +88,7 @@
     --primary: 250 65% 65%;
     --primary-foreground: 213 31% 91%;
 
-    --border: 217 33% 20%;
+    --border: 217 40% 10%;
   }
 
   * {
@@ -105,18 +105,47 @@
   }
 }
 
+@layer utilities {
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .animate-blink {
+    animation: blink 1s step-end infinite;
+  }
+
+  @keyframes loading {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(250%);
+    }
+  }
+
+  .animate-loading-bar {
+    animation: loading 1s ease infinite;
+  }
+}
+
 @utility container {
   margin-inline: auto;
   padding-inline: 2rem;
 }
 
 @utility star {
-  @apply absolute rounded-full bg-white;
+  @apply absolute rounded-full bg-zinc-300;
   box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
 }
 
 @utility meteor {
-  @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full;
+  @apply absolute bg-linear-to-r from-yellow-500 via-red-300 to-transparent rounded-full;
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
 }
 
@@ -124,6 +153,5 @@
   max-width: 100%;
   margin: 0;
   padding: 0 auto;
-  color: white;
   font-family: "Oxanium", sans-serif;
 }

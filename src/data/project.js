@@ -1,4 +1,5 @@
 import portfoliov2 from "./../assets/img/portfolio-v2.png";
+import packinglist from "./../assets/img/packing-list.jpg";
 
 export const project = [
   {
@@ -50,8 +51,23 @@ export const project = [
       boxShadow: "0px 0px 60px 0px #AA3C304D",
     },
     spotlight: "",
+    tags: [{ path: "/css.jpg", name: "CSS" }],
+  },
+  {
+    title: "Packing List",
+    desc: "A simple React app to manage a packing list. Users can add items, mark items as packed, delete items, and sort items.",
+    href: "https://whimsical-kelpie-a68cc0.netlify.app/",
+    className: "animatedText1",
+    texture: "/doubledegree.png",
+    logo: packinglist,
+    logoStyle: {
+      backgroundColor: "#2A1816",
+      border: "0.2px solid #36201D",
+      boxShadow: "0px 0px 60px 0px #AA3C304D",
+    },
+    spotlight: "",
     tags: [
-      { path: "/tailwind.png", name: "TailwindCSS" },
+      { path: "/css.jpg", name: "CSS" },
       { path: "/react.png", name: "React" },
     ],
   },

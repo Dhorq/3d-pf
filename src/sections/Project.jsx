@@ -41,10 +41,10 @@ const Project = () => {
   };
 
   return (
-    <section className="c-space m-10 sm:m-20">
-      <p className="head-text text-3xl text-center">My Projects</p>
+    <section className="c-space my-5">
+      <p className="text-3xl text-center">My Projects</p>
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
-        <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200 bg-stone-950 border border-gray-500">
+        <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200 border">
           {/* <div className="absolute top-0 right-0 -z-0">
             <img
               src={currentProject.spotlight}
@@ -62,8 +62,8 @@ const Project = () => {
               className="w-10 h-10 shadow-sm"
             />
           </div>
-          <div className="flex flex-col gap-5 text-white-600 my-5 min-h-[200px] sm:min-h-[200px]">
-            <p className="text-white text-2xl font-semibold animatedText">
+          <div className="flex flex-col gap-5 text-white-600 my-5 min-h-[300px] sm:min-h-[200px]">
+            <p className="text-2xl font-semibold animatedText">
               {currentProject.title}
             </p>
             <p className="animatedText font-extralight">
@@ -84,22 +84,18 @@ const Project = () => {
               ))}
             </div>
             <a
-              className="flex items-center gap-2 cursor-pointer text-white-600"
+              className="flex items-center gap-2 cursor-pointer text-white-600 hover:text-green-500 hover:scale-105"
               href={currentProject.href}
               target="_blank"
               rel="noreferrer"
             >
               <p>Check Live Site</p>
-              <img
-                src="/arrow-link.png"
-                alt="Arrow"
-                className="w-3 h-3 text-white"
-              />
+              <img src="/arrow-link.png" alt="Arrow" className="w-3 h-3" />
             </a>
           </div>
           <div className="flex justify-between items-center mt-7">
             <button
-              className="arrow-btn cursor-pointer"
+              className="arrow-btn cursor-pointer hover:scale-125"
               onClick={() => handleNavigation("previous")}
             >
               <img
@@ -109,14 +105,14 @@ const Project = () => {
               />
             </button>
             <button
-              className="arrow-btn cursor-pointer"
+              className="arrow-btn cursor-pointer hover:scale-125"
               onClick={() => handleNavigation("next")}
             >
               <img src="/arrow-button.png" alt="Arrow" className="w-7 h-5" />
             </button>
           </div>
         </div>
-        <div className="border border-white bg-black-200 h-150 md:h-full shadow-2xl shadow-black-200 bg-stone-950">
+        <div className="border h-150 md:h-full shadow-2xl shadow-black-200">
           <Canvas gl={{ alpha: false }}>
             <ambientLight intensity={Math.PI / 2} />
             <directionalLight position={[10, 10, 5]} />
