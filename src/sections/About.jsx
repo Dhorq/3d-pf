@@ -3,7 +3,10 @@ const About = () => {
   const backendSkills = ["Node.js", "SQL", "MongoDB"];
 
   return (
-    <section className="min-h-screen flex items-center justify-center">
+    <section
+      id="about"
+      className="min-h-screen flex items-center justify-center"
+    >
       <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl text-center">About</h2>
         <div className="p-10 border hover:-translate-y-1 transition-all">

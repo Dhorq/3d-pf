@@ -7,6 +7,7 @@ import Footer from "./../sections/Footer";
 import NavBar from "../sections/NavBar";
 import About from "../sections/About";
 import LoadingScreen from "../sections/LoadingScreen";
+import Contact from "../sections/Contact";
 
 const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -25,6 +26,7 @@ const Home = () => {
         <Header />
         <About />
         <Project />
+        <Contact />
         <Footer />
       </div>
     </div>
