@@ -5,11 +5,11 @@ const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center"
+      className="min-h-screen flex items-center justify-center my-15"
     >
       <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl text-center">About</h2>
-        <div className="p-10 border hover:-translate-y-1 transition-all">
+        <div className="p-10 mt-12 border hover:-translate-y-1 transition-all">
           <p className="text-opacity-50 mb-5 text-justify">
             Recent graduate in Computer Science from Bina Nusantara University
             aspiring to build a career in software development. Possess a strong
