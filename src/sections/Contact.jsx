@@ -37,15 +37,15 @@ const Contact = () => {
             </li>
           </ul>
         </div>
-        <div className="flex justify-center text-center h-130 hover:-translate-y-1 transition-all">
+        <div className="flex justify-center text-center h-120 sm:h-130 hover:-translate-y-1 transition-all">
           <form
             onSubmit={handleSubmit}
-            className="flex flex-col gap-3 bg-card p-10 rounded-2xl border"
+            className="flex flex-col gap-3 bg-card p-5 sm:p-10 rounded-2xl border"
           >
             <div className="flex flex-col items-start justify-center">
               <label htmlFor="">Full Name</label>
               <input
-                className="border p-2 w-75 md:w-[500px] bg-background"
+                className="border p-2 w-75 md:w-[325px] xl:w-[500px] bg-background"
                 name="from_name"
                 type="text"
                 placeholder="Name"
@@ -55,7 +55,7 @@ const Contact = () => {
             <div className="flex flex-col items-start">
               <label htmlFor="">Email</label>
               <input
-                className="border p-2 w-75 md:w-[500px] bg-background"
+                className="border p-2 w-75 md:w-[325px] xl:w-[500px] bg-background"
                 name="from_email"
                 type="email"
                 placeholder="Email"
@@ -70,7 +70,7 @@ const Contact = () => {
             <div className="flex flex-col items-start">
               <label htmlFor="">Message</label>
               <textarea
-                className="border p-2 w-75 h-50 md:w-[500px] bg-background resize-none"
+                className="border p-2 w-75 md:w-[325px] h-50 xl:w-[500px] bg-background resize-none"
                 name="message"
                 placeholder="Message..."
               ></textarea>
@@ -81,7 +81,7 @@ const Contact = () => {
               />
             </div>
             <button
-              className="border w-75 md:w-[500px] h-10 rounded bg-background hover:cursor-pointer hover:bg-gray-800 hover:text-white transition-all"
+              className="border w-75 md:w-[325px] xl:w-[500px] h-10 rounded bg-background hover:cursor-pointer hover:bg-gray-800 hover:text-white transition-all"
               type="submit"
             >
               {state.succeeded
