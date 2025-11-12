@@ -21,19 +21,49 @@ const Contact = () => {
           />
           <ul className="flex gap-4 text-center">
             <li>
-              <MdEmail className="size-7 hover:translate-y-1 hover:transition-all cursor-pointer" />
+              <a
+                href="https://mail.google.com/mail/u/0/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <MdEmail className="size-7 hover:translate-y-1 hover:transition-all cursor-pointer" />
+              </a>
             </li>
             <li>
-              <FaWhatsappSquare className="size-7 hover:translate-y-1 hover:transition-all cursor-pointer" />
+              <a
+                href="https://wa.me/+6281384752978"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaWhatsappSquare className="size-7 hover:translate-y-1 hover:transition-all cursor-pointer" />
+              </a>
             </li>
             <li>
-              <FaLinkedin className="size-7 hover:translate-y-1 hover:transition-all cursor-pointer" />
+              <a
+                href="https://www.linkedin.com/in/ridhorifqymuhammad/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin className="size-7 hover:translate-y-1 hover:transition-all cursor-pointer" />
+              </a>
             </li>
             <li>
-              <FaGithubSquare className="size-7 hover:translate-y-1 hover:transition-all cursor-pointer" />
+              <a
+                href="https://github.com/Dhorq"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithubSquare className="size-7 hover:translate-y-1 hover:transition-all cursor-pointer" />
+              </a>
             </li>
             <li>
-              <FaInstagramSquare className="size-7 hover:translate-y-1 hover:transition-all cursor-pointer" />
+              <a
+                href="https://www.instagram.com/ridhorifqyy/#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagramSquare className="size-7 hover:translate-y-1 hover:transition-all cursor-pointer" />
+              </a>
             </li>
           </ul>
         </div>

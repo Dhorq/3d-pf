@@ -66,13 +66,25 @@ const About = () => {
             <div className="space-y-4 ">
               <div>
                 <h4 className="font-semibold">Data Analyst at DPR RI (2023)</h4>
-                <p>Visualized data in Tableau</p>
+                <p>
+                  Utilized Tableau Desktop to create a performance dashboard
+                  highlighting key metrics and trends, enhancing reporting
+                  efficiency and decision-making. Processed and analyzed data
+                  using Python (Pandas, Matplotlib, Seaborn) to ensure accuracy,
+                  uncover patterns, and generate actionable business insights.
+                </p>
               </div>
               <div>
                 <h4 className="font-semibold">
                   System Analyst at KEMENKEU (2023)
                 </h4>
-                <p>Developed ticketing website</p>
+                <p>
+                  Designed a high-fidelity ticketing system mockup in Figma and
+                  developed a responsive website using HTML, CSS, and JavaScript
+                  to enhance user experience. Conducted UAT for the
+                  e-Phytosanitary system and contributed to creating flowcharts
+                  and ERDs to improve application logic and database design.
+                </p>
               </div>
             </div>
           </div>
