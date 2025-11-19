@@ -6,7 +6,7 @@ const About = () => {
     "React.js",
     "Next.js",
   ];
-  const backendSkills = ["Node.js", "Express.js", "SQL", "MongoDB"];
+  const backendSkills = ["Node.js", "Express.js", "PostgreSQL", "MongoDB"];
 
   return (
     <section

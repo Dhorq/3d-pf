@@ -10,17 +10,21 @@ const Footer = () => {
         <a
           className="mr-5 hover:text-amber-200"
           href="https://portfolio-ridho-six.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           First Portfolio
         </a>
         <a
           className="hover:text-amber-200"
           href="https://new-pf-eight.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Second Portfolio
         </a>
       </div>
-      <p className="text-center mt-10">&copy; {date} Ridho Rifqy Muhammad</p>
+      <p className="text-center mt-10">&copy; {date} Ridho Rifqy Muhammad 💘</p>
     </div>
   );
 };
