@@ -1,11 +1,17 @@
 const About = () => {
-  const frontendSkills = ["React.js", "TailwindCSS", "HTML5", "CSS3"];
-  const backendSkills = ["Node.js", "SQL", "MongoDB"];
+  const frontendSkills = [
+    "HTML5",
+    "CSS3",
+    "TailwindCSS",
+    "React.js",
+    "Next.js",
+  ];
+  const backendSkills = ["Node.js", "Express.js", "SQL", "MongoDB"];
 
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center my-15"
+      className="min-h-screen flex items-center justify-center py-15"
     >
       <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl text-center">About</h2>
@@ -51,7 +57,9 @@ const About = () => {
           <div className="p-6 border hover:-translate-y-1 transition-all">
             <h3 className="text-xl font-bold mb-5">🎓 Education</h3>
             <ul className="list-disc list-inside space-y-2">
-              <li>Bina Nusantara University (2020-2024)</li>
+              <li className="font-semibold">
+                Bina Nusantara University (2020-2024)
+              </li>
               <li>
                 Relevant Coursework: Data Analytics, Data Management &
                 Descriptive Analytics, Statistical for Decision Making,
