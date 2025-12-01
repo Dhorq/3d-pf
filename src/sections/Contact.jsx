@@ -75,20 +75,20 @@ const Contact = () => {
             <div className="flex flex-col items-start justify-center">
               <label htmlFor="">Full Name</label>
               <input
-                className="border p-2 w-75 md:w-[325px] xl:w-[500px] bg-background"
+                className="border p-2 w-75 md:w-[325px] xl:w-[500px] bg-background placeholder-gray-600"
                 name="from_name"
                 type="text"
-                placeholder="Name"
+                placeholder="Enter your name"
                 required
               />
             </div>
             <div className="flex flex-col items-start">
               <label htmlFor="">Email</label>
               <input
-                className="border p-2 w-75 md:w-[325px] xl:w-[500px] bg-background"
+                className="border p-2 w-75 md:w-[325px] xl:w-[500px] bg-background placeholder-gray-600"
                 name="from_email"
                 type="email"
-                placeholder="Email"
+                placeholder="Enter your email"
                 required
               />
               <ValidationError
@@ -100,9 +100,9 @@ const Contact = () => {
             <div className="flex flex-col items-start">
               <label htmlFor="">Message</label>
               <textarea
-                className="border p-2 w-75 md:w-[325px] h-50 xl:w-[500px] bg-background resize-none"
+                className="border p-2 w-75 md:w-[325px] h-50 xl:w-[500px] bg-background resize-none placeholder-gray-600"
                 name="message"
-                placeholder="Message..."
+                placeholder="Enter your message..."
               ></textarea>
               <ValidationError
                 prefix="Message"

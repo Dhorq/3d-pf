@@ -62,7 +62,7 @@ const Project = () => {
               className="w-10 h-10 shadow-sm"
             />
           </div>
-          <div className="flex flex-col gap-5 text-white-600 my-5 min-h-[300px] sm:min-h-[200px]">
+          <div className="flex flex-col gap-5 text-white-600 my-5 min-h-[360px] sm:min-h-[250px]">
             <p className="text-2xl font-semibold animatedText">
               {currentProject.title}
             </p>
@@ -71,7 +71,7 @@ const Project = () => {
             </p>
             <p className="animatedText">{currentProject.subdesc}</p>
           </div>
-          <div className="flex items-center justify-between flex-wrap gap-5">
+          <div className="flex flex-col lg:flex-row items-center justify-between flex-wrap gap-5">
             <div className="flex items-center gap-3">
               {currentProject.tags.map((tag, index) => (
                 <div key={index} className="tech-logo">
@@ -83,15 +83,17 @@ const Project = () => {
                 </div>
               ))}
             </div>
-            <a
-              className="flex items-center gap-2 cursor-pointer text-white-600 hover:text-green-500 hover:scale-105"
-              href={currentProject.href}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <p>Check Live Site</p>
-              <img src="/arrow-link.png" alt="Arrow" className="w-3 h-3" />
-            </a>
+            <div>
+              <a
+                className="flex items-center gap-2 cursor-pointer text-white-600 hover:text-green-500 hover:scale-105"
+                href={currentProject.href}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <p>Check Live Site</p>
+                <img src="/arrow-link.png" alt="Arrow" className="w-3 h-3" />
+              </a>
+            </div>
           </div>
           <div className="flex justify-between items-center mt-7">
             <button

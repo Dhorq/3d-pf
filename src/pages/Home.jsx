@@ -10,6 +10,7 @@ import LoadingScreen from "../sections/LoadingScreen";
 import Contact from "../sections/Contact";
 
 const Home = () => {
+  const [isDarkMode, setIsDarkMode] = useState(true);
   const [isLoaded, setIsLoaded] = useState(false);
 
   return (
@@ -20,8 +21,8 @@ const Home = () => {
           isLoaded ? "opacity-100" : "opacity-0"
         }`}
       >
-        <ThemeToggle />
-        <StarBackground />
+        <ThemeToggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+        <StarBackground isDarkMode={isDarkMode} />
         <NavBar />
         <Header />
         <About />
